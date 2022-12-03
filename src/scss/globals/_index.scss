@@ -1,0 +1,17 @@
+@forward 'boilerplate';
+@forward 'typography';
+
+section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-flow: nowrap;
+}
