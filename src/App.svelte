@@ -7,13 +7,13 @@
   import Footer from "./lib/Footer.svelte";
 </script>
 
-<main class="wrapper">
-  <Hero class="section section__1" />
-  <Second class="section section__2" />
+
+  <Hero />
+  <!-- <Second class="section section__2" />
   <Third class="section section__3" />
   <Fourth class="section section__4" />
-  <Footer class="section section__3" />
-</main>
+  <Footer class="section section__3" /> -->
+
 
 <style lang="scss">
   //   section {
