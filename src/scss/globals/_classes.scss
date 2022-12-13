@@ -1,0 +1,18 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+
+}
+
+.fixed {
+    position: fixed;
+}

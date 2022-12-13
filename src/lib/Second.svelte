@@ -1,14 +1,21 @@
 <section class={$$props.class}>
-  <h1>hello</h1>
+  <h5>We provide quality content for the masses</h5>
 </section>
 
 <style lang="scss">
   .section {
+    padding: 1rem;
+    text-align: center;
+
     &__2 {
-      background: center/ cover no-repeat #eee url("../../assets/bgr-2.gif");
-      h1{
-          font-size: 7rem;
-      }
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      // padding: 1rem;
+
+   
     }
   }
 </style>
