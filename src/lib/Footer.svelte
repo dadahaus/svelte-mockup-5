@@ -1,55 +1,83 @@
 <footer>
-  <div class="one"><h2>don't hesitate to contact us</h2></div>
-  <div class="two row">
-    <a href="http://"><div /></a>
-    <a href="http://"><div /></a>
-    <a href="http://"><div /></a>
+  
 
+  <a class="two" href="http://"
+    ><div>
+      write us an email <b>here</b>
+      <img class="mail" src="../../assets/mail-2.svg" alt="mail" />
+    </div></a
+  >
+
+  <div class="one column">
+    <a href="http://"><div /></a>
+    <a href="http://"><div /></a>
+    <a href="http://"><div /></a>
   </div>
-<a class="three" href="http://"><div>or just simply write <img class="mail" src="../../assets/mail-2.svg" alt="mail"></div></a>
 </footer>
 
 <style lang="scss">
   footer {
     position: relative;
     display: flex;
+    flex-flow: row;
     align-items: center;
     justify-content: space-between;
-    height: auto;
+    height: calc(100vh);
     width: 100vw;
     padding: 4rem;
     gap: 4rem;
 
+    // overflow: hidden;
+
     .one {
-      text-transform: uppercase;
-      flex-basis: 50%;
-      // overflow: hidden;
-    }
-    .two {
-      flex-basis: 50%;
+      flex-basis: 100%;
       justify-content: space-evenly;
       gap: 1rem;
       flex-flow: wrap;
+      position: relative;
+      // &:before {
+      //   content: " and beyond...";
+      //   display: block;
+      //   height: 0px;
+      //   width: 20%;
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   background-color: whitesmoke;
+      //   transform: translateX(-10%);
+
+      // }
 
       & > * {
         height: 3rem;
         width: 3rem;
         &:nth-child(1) {
-          background: center/ cover no-repeat url("../../assets/instagram.svg");
+          background: center/ cover no-repeat url("../../assets/behance-2.svg");
         }
         &:nth-child(2) {
           background: center/ cover no-repeat url("../../assets/dribbble.svg");
         }
         &:nth-child(3) {
-          background: center/ cover no-repeat url("../../assets/behance-2.svg");
+          background: center/ cover no-repeat url("../../assets/instagram.svg");
         }
       }
     }
-    .three{
+    .two {
       position: absolute;
       bottom: 10%;
-      right: 10%;
-      .mail{
+      left: 10%;
+      &:before {
+        content: " ";
+        display: block;
+        height: 1px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: whitesmoke;
+        transform: translateY(-1rem);
+      }
+      .mail {
         width: 2rem;
         height: 2rem;
         transform: translateY(30%);
